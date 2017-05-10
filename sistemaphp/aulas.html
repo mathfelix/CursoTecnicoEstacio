@@ -1,0 +1,222 @@
+<html>
+	<head>
+        <title>Academia</title>
+        <meta charset="utf-8">
+        <link href="cssboot/bootstrap.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    
+        <!-- Chamadas JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+
+    </head>
+    
+    <body>
+    	<!-- Menu -->
+        <nav role="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Navegação Responsiva</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="index.html"><img src="images/logo3.png" width="128px" height="78px" style="margin-left:12px; margin-right:12px;"></a>
+            </div>
+
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" style="margin-top:15px;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                    <li class="active"><a href="aulas.html">Aulas</a></li>
+                    <li><a href="contato.html">Contato</a></li> 
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="horarios.html">Horarios</a></li> 
+                    <li style="border: 1px solid #35A6B6; border-radius:1px; margin-top:-1px; margin-left:1px"><a href="login.html">Login</a></li>
+                </ul>
+            </div>     
+        </nav>
+    
+        <!-- Container -->
+        <div class="container">
+            
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Aulas</li>
+            </ol>
+
+            <div class="page-header">
+                <h1>Aulas</h1>
+
+            </div>
+
+            <div class="jumbotron">
+                <div class="container" style="text-align:justify;">
+                    <h2>Veja o que temas a oferecer na Academia</h2><br>
+
+                    <div class="tabbable"> <!-- Only required for left/right tabs -->
+                        
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a href="#tab1" data-toggle="tab">Pilates</a></li>
+                          <li><a href="#tab2" data-toggle="tab">Musculação</a></li>
+                          <li><a href="#tab3" data-toggle="tab">Ergometria</a></li>
+                          <li><a href="#tab4" data-toggle="tab">Natação</a></li>
+                          <li><a href="#tab5" data-toggle="tab">Lutas</a></li>
+                          <li><a href="#tab6" data-toggle="tab">Alongamento</a></li>
+                          <li><a href="#tab7" data-toggle="tab">Treinamento Funcional</a></li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                          
+                          <div class="tab-pane active" id="tab1">
+                            <h3>Pilates</h3>
+                            <center><img src="images/pilates.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>O método Pilates não é apenas uma série de exercícios, mas um trabalho de desenvolvimento do equilíbrio corpo-mente e educação dia-após-dia. Exige compromisso tanto do professor como do aluno, para sempre que possível, progredir os exercícios, melhorar o alinhamento corporal e hábitos posturais.</p>
+                                <p>Pilates é um exercício que objetiva o desenvolvimento do "centro" do corpo; criando um centro estável para todos os tipos de movimento. Com a continuidade das aulas, há uma reestruturação do corpo e melhora do equilíbrio. Por fim, o corpo terá movimento com o máximo de eficiência e mínimo esforço. É um misto de ginástica e fisioterapia, que previne lesões nas articulações, alivia dores musculares e tensão emocional e melhora o alinhamento postural.</p>
+                                <p>As aulas são dirigidas por profissionais de fisioterapia especializados, com no máximo de 4 alunos por aula, oferecendo atenção pessoal, quase um treinamento individual, maximizando o potencial de cada um, diminuindo ainda mais riscos de lesões.</p>
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 07:15h - 20:15h</small></p>
+                                    <p><small>- Duração das aulas: 1h ou 1h 15min</small></p>
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab2">
+                            <h3>Musculação</h3>
+                            <center><img src="images/musculacao.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>Atividade assistida por profissionais de Educação Física e Fisioterapia, em turmas reduzidas (até 10 alunos) e com hora marcada.</p>
+                                <p>Cada cliente tem seu programa estudado a partir do trabalho de pesquisa iniciado na avaliação. Todo cuidado é observado para que a carga proposta seja adequada aos limites do aluno.</p>
+                                <div class="box_horarios">
+                                    <br>
+                                    <p><small>- De Seg a Sex das 06:20h - 20:30h</small></p>
+                                    
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab3">
+                            <h3>Ergometria</h3>
+                            <center><img src="images/ergometria.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>Atividade assistida por profissionais de Educação Física e Fisioterapia, com acompanhamento individualizado e programas personalizados.</p>
+                                <p>Trabalho realizado em esteiras, bicicletas ou "transport" (elíptico).</p>
+                                <div class="box_horarios">
+                                    <br>
+                                    <p><small>- De Seg a Sex das 06:20h - 20:30h</small></p>
+                                    
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab4">
+                            <h3>Natação</h3>
+                            <center><img src="images/natacao.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>Por ser uma atividade realizada em piscina com água aquecida, também proporciona um natural “relaxamento” do corpo diminuindo a tensão e o “stress” do dia-a-dia. Além disso, a Natação pode ser utilizada para vários objetivos, como aprendizagem e aperfeiçoamento dos nados tradicionais (Crawl, Costas, Peito e Borboleta), como atividade recreativa, lúdica, etc... Mas, o mais importante é que independente de qual seja o seu objetivo, a natação proporcionará inúmeros benefícios ao seu praticante e fará com que essa prática seja um hábito de hoje e sempre!</p>
+                                
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 1h</small></p>
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab5">
+                            <h3>Lutas</h3>
+                            <p>Na Heavy GYM você possui uma variedade de lutas que pode praticar!</p><br>
+                            <h4><b>Boxe</b></h4>
+                            <center><img src="images/boxe.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>Para obter um corpo sarado, muitos aderem à prática do boxe, pois é um esporte que exige condicionamento físico e também ajuda a definir os músculos. E o número de mulheres praticantes da nobre arte no Rio tem aumentado cada vez mais. Afinal, ficar correndo em uma esteira ou levantando pesos por horas e horas, todos os dias, realmente é muito cansativo.</p>
+                                
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 1h</small></p>
+                                </div>
+                                <br>
+                            </div><br>
+                            <h4><b>Muay Thai</b></h4>
+                            <center><img src="images/muay_thai.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>O muay thai, também conhecido por thai boxing (boxe tailandês) em países como os Estados Unidos e Inglaterra, é uma arte marcial cuja precedência remota de aproximadamente dois mil anos atrás. A sua origem encontra-se enraizada com os primórdios históricos do povo tailandês.</p>
+                                
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 1h</small></p>
+                                </div>
+                                <br>
+                            </div><br>
+                            <h4><b>Body Combat</b></h4>
+                            <center><img src="images/body_combat.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>BODYCOMBAT é um programa de ginástica baseado nos mais diversos estilos de Artes Marciais como: Karatê, Boxe, Capoeira, Muay Thai, Jiu Jitsu, Kick Boxing, entre outras. Uma aula segura e cheia de energia, onde todos podem treinar de forma eficiente e motivante, queimando muitas calorias. É uma aula democrática, com opções para quem está começando ou quem já é expert no assunto, que conquistou e continua conquistando milhões de praticantes em todo o mundo. </p>
+                                
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 1h</small></p>
+                                </div>
+                                <br>
+                            </div><br>
+                            <h4><b>Jiu Jitsu</b></h4>
+                            <center><img src="images/jiu_jitsu.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>A denominação "jiu jitsu" foi composta para designar, no Japão, aquelas habilidades de luta que não envolviam a utilização de armas. Nesse contexto, o termo acabou por reunir grande variedade de estilos de combate, que se tinham desenvolvido até aquele momento.</p>
+                                
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 1h</small></p>
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab6">
+                            <h3>Alongamento</h3>
+                            <center><img src="images/alongamento.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>Aula indicada para aumentar a amplitude articular e  a flexibilidade, prevenindo lesões.​</p>
+                                <p>Dispomos de equipamentos para alongamento e propriocepção.​</p>
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 50 min</small></p>
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="tab7">
+                            <h3>Alongamento</h3>
+                            <center><img src="images/treinamento_funcional.jpg" width="500" height="300" class="img"></center><br>
+                            <div style="border:3px solid #000; background:#fff; padding:15px 15px 5px 15px;">
+                                <p>Apesar de muitos acreditarem que o Treinamento Funcional é uma novidade, não é bem de fato o que acontece. O Treinamento Funcional já era “praticado” desde a época da mitologia grega, Jogos olímpicos, gladiadores, etc.</p>
+                                <p>O Treinamento Funcional é um tipo de exercício físico que tem como objetivo principal melhorar a aptidão física para uma melhor execução dos movimentos fundamentais do corpo, ou seja, agachar, avançar, abaixar, puxar, empurrar, levantar e girar, entre outros. Também é muito usado como uma fundamental ferramenta na recuperação de lesões músculo-esqueléticas, tanto para atletas quanto para alunos freqüentadores de academias que já passaram por esse problema.</p>
+                                
+                                <div class="box_horarios">
+                                    <p><small>- De Seg a Sex das 08:20h - 18:30h</small></p>
+                                    <p><small>- Duração das aulas: 50 min</small></p>
+                                </div>
+                                <br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        	<hr>
+
+            <footer>
+              <center><p>&copy; Matheus Simoes 2015</p></center>
+            </footer>
+
+        </div>
+        <!-- /container -->
+
+
+    </body>
+
+
+</html>

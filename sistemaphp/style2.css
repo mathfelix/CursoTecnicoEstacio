@@ -1,0 +1,39 @@
+body{
+	background: #008B8B;
+	margin-top: 40px;
+}
+
+#cadastro{
+	margin-left: 278px;
+}
+
+#update{
+	margin-left: 50px;
+}
+
+h1{
+	color: #fff;
+}
+
+#back{
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-bottomleft:8px;
+	-moz-border-radius-bottomright:15px;
+	height: 40px;
+	width: 120px;
+	background: #F1F1F1;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#back a{
+	padding-top: 7px;
+	display: block;
+	color: #999;
+	font: 400 18px Calibri;
+}

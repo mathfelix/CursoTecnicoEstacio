@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <link href="cssboot/bootstrap.css" rel="stylesheet">
+        <link href="style2.css" rel="stylesheet">
+    
+        <!-- Chamadas JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+
+        <script type="text/javascript">
+			   function Mascara(obj, funcao)
+			   {
+			    vObj = obj;
+			    vFun = funcao;
+
+			    setTimeout('execMascara()', 1);
+			   }
+
+			   function execMascara()
+			   {
+			    vObj.value = vFun(vObj.value);
+			   }
+			   function Cpf(v)
+			   {
+			    v = v.replace(/\D/g,''); // Remove tudo que não for digito
+			    v = v.replace(/(\d{3})(\d)/,'$1.$2');
+			    v = v.replace(/(\d{3})(\d)/,'$1.$2');
+			    v = v.replace(/(\d{3})(\d)/,'$1-$2');
+
+			return v;
+  			}
+
+  		</script>
+
+    </head>
+    
+    <body class="bg">
+    		<div id="back"><a href="index.html" title="Voltar a Home"> &laquo; Home </a></div><br><br><br>
+        	<div class="container">
+
+        		<div id="login">
+
+					<center><img src="images/logo3.png" width="150px" height="100px"></center>
+					<form action="logindb.php" method="post">					
+						<center>
+							<label for="cpf"></label><br> 
+							<input type="text" class="txt bradius" name="login" maxlength="14" placeholder="Digite seu CPF" onkeypress="Mascara(this, Cpf)"/><br><br>
+							
+							<label for="senha"></label><br> 
+							<input type="password" class="txt bradius" name="senha" placeholder="Digite sua Senha"/><br><br>					
+							
+							<select name="op" class="txt5 bradius">
+								<option value="1">Aluno</option>
+								<option value="2">Professor</option>
+								<option value="3">Administrador</option>
+							</select>
+			
+							<br><br><input type="submit" class="sb bradius" value="Acessar"/>
+						</center>
+					</form>
+
+					<br><center><p class="rodape"><a href="cadastro.html" title="Cadastre-se">Cadastre-se</a> | <a href="#">Esqueci a senha</a></p></center>
+			
+				</div>
+			
+			</div>
+		
+	</body>
+
+</html>

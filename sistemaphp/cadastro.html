@@ -1,0 +1,124 @@
+<html>
+	<head>
+        <title>Academia</title>
+        <meta charset="utf-8">
+        <link href="cssboot/bootstrap.css" rel="stylesheet">
+        <link href="style2.css" rel="stylesheet">
+    
+        <!-- Chamadas JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-modal.js"></script>
+
+        <script type="text/javascript">
+           function Mascara(obj, funcao)
+           {
+            vObj = obj;
+            vFun = funcao;
+
+            setTimeout('execMascara()', 1);
+           }
+
+           function execMascara()
+           {
+            vObj.value = vFun(vObj.value);
+           }
+           function Cpf(v)
+           {
+            v = v.replace(/\D/g,''); // Remove tudo que não for digito
+            v = v.replace(/(\d{3})(\d)/,'$1.$2');
+            v = v.replace(/(\d{3})(\d)/,'$1.$2');
+            v = v.replace(/(\d{3})(\d)/,'$1-$2');
+
+            return v;
+
+           }
+           function Telefone(v)
+           {
+            v = v.replace(/\D/g,'');
+            v = v.replace(/^(\d\d)(\d)/g,'($1) $2');
+            v = v.replace(/(\d{4})(\d)/,'$1-$2');
+
+            return v;
+           }
+           function Cep(v)
+           {
+            v = v.replace(/\D/g,'');
+            v = v.replace(/(\d{5})(\d{1,5})$/,'$1-$2');    
+
+            return v;
+           }
+           function Data(v)
+           {
+            v = v.replace(/\D/g,'');
+            v = v.replace(/^(\d{2})(\d)/, '$1/$2');
+            v = v.replace(/(\d{2})(\d)/, '$1/$2');
+
+            return v;
+          }
+        </script>
+
+    </head>
+    
+    <body>
+        <!-- Container -->
+        <div class="container">
+            
+            <div id="back"><a href="login.html" title="Voltar a Login"> &laquo; Login </a></div>
+
+            <div class="page-header">
+                <h1 color="#fff">Cadastro</h1>
+
+            </div>
+
+            <div class="jumbotron">
+                <div class="container" style="text-align:justify;">
+                        <center><img src="images/logo3.png" width="250" height="150"></center>
+                        <center><p><h6>Os campos com * sao obrigatorios!</h6></p></center>
+                        <form action="cadastrodb.php" method="post">
+                            
+                            <label for="cpf" id="cadastro">CPF*</label><br> 
+                            <center><input id="cpf" type="text" class="txt bradius" name="txtcpf" maxlength="14" onkeypress="Mascara(this, Cpf)" size="30"/><br><br></center>
+                            
+                            <label for="nome" id="cadastro">Nome*</label><br> 
+                            <center><input id="nome" type="text" class="txt bradius" name="txtnome" size="30"/><br><br></center>
+
+                            <label for="data" id="cadastro">Data de nascimento*</label><br>
+                            <center><input type="text" class="txt bradius" name="txtdataa" maxlength="10" onkeypress="Mascara(this, Data)" size="30"/><br><br></center>
+
+                            <label for="sexo" id="cadastro">Sexo*</label><br>
+                            <center><input type="radio" name="txtsex" value="Masculino" class="txt3 bradius"> Masculino
+            
+                            <input type="radio" name="txtsex" value="Feminino" class="txt3 bradius"> Feminino</center>
+                            
+                            <br>
+                            <label for="email" id="cadastro">E-mail</label><br>
+                            <center><input id="email" type="text" class="txt bradius" name="txtemail" size="30"/><br><br></center>
+                                        
+                            <label for="telefone" id="cadastro">Telefone</label><br>
+                            <center><input id="telefone" type="text" class="txt bradius" name="txttelefone" maxlength="14" onkeypress="Mascara(this, Telefone)" size="30"/><br><br></center>
+
+                            <label for="senha" id="cadastro">Senha*</label><br>
+                            <center><input id="senha" type="password" class="txt bradius" name="txtsenha" size="30"/><br><br></center>
+                        
+                            <center><input type="submit" class="sb bradius" value="Cadastrar"/> <input type="reset" class="sb bradius" value="Limpar"/></center>
+                        
+                        </form>
+                    
+                </div>
+            </div>
+
+        	<hr>
+
+            <footer>
+              <center><p>&copy; Matheus Simoes 2015</p></center>
+            </footer>
+
+        </div>
+        <!-- /container -->
+
+
+    </body>
+
+
+</html>
